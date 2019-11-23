@@ -5,18 +5,29 @@ module.exports = data => {
     cliente: {
       nome: data.person_id.name
     },
-    itens: {
-      item: {
-        descricao: data.title,
-        qtde: 1,
-        vlr_unit: data.value
+    volumes: [
+      {
+        volume: {
+          servico: "Entrega Grátis"
+        }
       }
-    },
-    parcelas: {
-      parcela: {
-        vlr: data.value
+    ],
+    itens: [
+      {
+        item: {
+          descricao: data.title,
+          qtde: 1,
+          vlr_unit: data.value
+        }
       }
-    }
+    ],
+    parcelas: [
+      {
+        parcela: {
+          vlr: data.value
+        }   
+      }
+    ]
   };
 
   return js2xmlparser.parse("pedido", obj);

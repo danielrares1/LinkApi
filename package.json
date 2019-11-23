@@ -17,7 +17,12 @@
   },
   "homepage": "https://github.com/danielrares1/LinkApi#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "js2xmlparser": "^4.0.0",
-    "request": "^2.88.0"
+    "mongoose": "^5.7.12",
+    "request": "^2.88.0",
+    "xml-js": "^1.6.11"
   }
 }
