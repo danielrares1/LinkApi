@@ -1,11 +1,19 @@
 const js2xmlparser = require('js2xmlparser');
+const getDealsPipedrive = require('./functions/getDealsPipedrive.js');
 
-(async =() => { 
-    let pipedriveUrl = "https://companydomain.pipedrive.com/v1/deals?api_token=d2e1bf8f8a3a0abb0523267c6a237b49ca46bb7d&status=won"
+(async () => { 
+    try{
+        let obj = {
+            "name" : "daniel"
+        }
     
-    let obj = {
-        "name" : "daniel"
-    }
+        console.log(js2xmlparser.parse("nome",obj))
+    
+        let deals = await getDealsPipedrive()
+        console.log(' deals ', JSON.stringify(deals,null,4) )
+    } catch(error){
 
-    console.log(js2xmlparser.parse("nome",obj))
-})();
+    }
+    
+  
+})()
