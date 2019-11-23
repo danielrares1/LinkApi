@@ -1,0 +1,22 @@
+{
+  "name": "linkapi",
+  "version": "1.0.0",
+  "description": "test with node/mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielrares1/LinkApi.git"
+  },
+  "author": "daniel rares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielrares1/LinkApi/issues"
+  },
+  "homepage": "https://github.com/danielrares1/LinkApi#readme",
+  "dependencies": {
+    "js2xmlparser": "^4.0.0"
+  }
+}
